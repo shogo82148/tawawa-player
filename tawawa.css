@@ -1,3 +1,16 @@
 body {
     filter: contrast(0.2) sepia(1) hue-rotate(180deg) contrast(3);
 }
+
+#content {
+    float: left;
+}
+
+#sidebar {
+    float: right;
+}
+
+#sidebar img {
+    float: left;
+    width: 168px;
+}
