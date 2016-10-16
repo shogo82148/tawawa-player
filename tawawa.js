@@ -24,6 +24,16 @@
         item.appendChild(youtube);
     }
 
+    document.getElementById("button-go").addEventListener('click', function() {
+        var vid = document.getElementById("videourl").value;
+        var m = vid.match(/https?:\/\/www\.youtube\.com\/watch\?v=(\w+)/);
+            console.log(m);
+        if (m) {
+            vid = m[1];
+        }
+        showvideo(vid);
+    }, false);
+
     function clickitem(e) {
         showvideo(e.target.parentNode.dataset.vid);
         e.preventDefault();
