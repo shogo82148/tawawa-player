@@ -8,7 +8,7 @@ body {
     padding-top: 56.25%;
 }
 
-.move iframe{
+.move iframe, .move embed {
     position: absolute;
     top: 0;
     right: 0;
@@ -29,4 +29,8 @@ body {
 #sidebar img {
     float: left;
     width: 168px;
+}
+
+.item {
+    clear: both;
 }
